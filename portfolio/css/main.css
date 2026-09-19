@@ -1,0 +1,272 @@
+/* ==========================================================================
+   MAIN DESIGN SYSTEM & GRAVITAS VIT THEME TOKENS - OPTIMIZED FOR FAST PERFORMANCE
+   ========================================================================== */
+
+:root {
+  /* Color Palette - Dark Cyber & Premiere Pro Accents */
+  --bg-dark: #07080c;
+  --bg-surface: #0d0f17;
+  --bg-card: rgba(18, 22, 36, 0.75);
+  --bg-card-hover: rgba(26, 32, 54, 0.9);
+  --bg-input: rgba(15, 19, 32, 0.95);
+  
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-glow: rgba(0, 242, 254, 0.4);
+  --border-pr: rgba(153, 153, 255, 0.5);
+
+  /* Neon Accents inspired by Gravitas Tech Fest */
+  --cyan-neon: #00f2fe;
+  --violet-neon: #7928ca;
+  --magenta-neon: #ff007f;
+  --blue-neon: #0070f3;
+  --green-neon: #00ff87;
+
+  /* Premiere Pro Brand Colors */
+  --pr-brand: #9999ff;
+  --pr-bg: #141424;
+
+  /* Typography */
+  --font-main: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'Fira Code', monospace;
+  --font-heading: 'Space Grotesk', sans-serif;
+
+  /* Spacing & Fast Transitions */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+  --transition-fast: 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Reset & Performance Rules */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+  text-rendering: optimizeSpeed;
+}
+
+body.gravitas-theme {
+  background-color: var(--bg-dark);
+  color: #e2e8f0;
+  font-family: var(--font-main);
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Hardware Accelerated Background Canvas */
+#gravitasCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -3;
+  pointer-events: none;
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/* Cyber Perspective Grid Overlay */
+.cyber-grid-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 60px 60px;
+  z-index: -2;
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+/* Hardware Accelerated Ambient Glowing Orbs */
+.ambient-glow {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(120px);
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.35;
+  transform: translateZ(0);
+  will-change: transform, opacity;
+  animation: fastPulseGlow 10s infinite alternate ease-in-out;
+}
+
+.glow-1 {
+  width: 450px;
+  height: 450px;
+  background: radial-gradient(circle, var(--cyan-neon), transparent 70%);
+  top: -80px;
+  left: -80px;
+}
+
+.glow-2 {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, var(--violet-neon), transparent 70%);
+  top: 40%;
+  right: -150px;
+  animation-delay: -3s;
+}
+
+.glow-3 {
+  width: 450px;
+  height: 450px;
+  background: radial-gradient(circle, var(--magenta-neon), transparent 70%);
+  bottom: -100px;
+  left: 20%;
+  animation-delay: -6s;
+}
+
+@keyframes fastPulseGlow {
+  0% { transform: scale(1) translate3d(0, 0, 0); opacity: 0.25; }
+  50% { transform: scale(1.1) translate3d(20px, -15px, 0); opacity: 0.45; }
+  100% { transform: scale(0.95) translate3d(-15px, 25px, 0); opacity: 0.3; }
+}
+
+/* Typography & Gradient Utilities */
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--cyan-neon) 0%, #a855f7 50%, var(--magenta-neon) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.section-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 64px 24px;
+  position: relative;
+  z-index: 1;
+  contain: content;
+}
+
+.section-header {
+  margin-bottom: 40px;
+}
+
+.section-header.text-center {
+  text-align: center;
+}
+
+.section-tag {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.2em;
+  color: var(--cyan-neon);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  display: inline-block;
+  background: rgba(0, 242, 254, 0.08);
+  padding: 5px 12px;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(0, 242, 254, 0.2);
+}
+
+.section-title {
+  font-size: 2.6rem;
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 12px;
+}
+
+.section-subtitle {
+  font-size: 1.05rem;
+  color: #94a3b8;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Fast Interactive Buttons */
+.btn-primary-neon {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, var(--cyan-neon), var(--blue-neon));
+  color: #000;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 12px 26px;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(0, 242, 254, 0.35);
+  transition: var(--transition-fast);
+  transform: translateZ(0);
+}
+
+.btn-primary-neon:hover {
+  transform: translateY(-2px) translateZ(0);
+  box-shadow: 0 0 30px rgba(0, 242, 254, 0.6);
+  background: linear-gradient(135deg, #00f2fe, #7928ca);
+  color: #fff;
+}
+
+.btn-glass {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 12px 22px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.btn-glass:hover {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: var(--cyan-neon);
+  transform: translateY(-2px);
+}
+
+.btn-neon {
+  text-decoration: none;
+  display: inline-block;
+  padding: 1px;
+  border-radius: var(--radius-full);
+  background: linear-gradient(90deg, var(--cyan-neon), var(--magenta-neon));
+}
+
+.btn-neon .btn-content {
+  display: block;
+  background: var(--bg-dark);
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: var(--transition-fast);
+}
+
+.btn-neon:hover .btn-content {
+  background: transparent;
+  color: #000;
+  font-weight: 700;
+}
