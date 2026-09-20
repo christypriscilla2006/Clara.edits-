@@ -1,0 +1,252 @@
+/* ==========================================================================
+   PREMIERE PRO TIMELINE & BEFORE/AFTER SPLIT SLIDER STYLES
+   ========================================================================== */
+
+/* Hero Timeline Box */
+.hero-timeline-box {
+  width: 100%;
+}
+
+.timeline-window {
+  background: rgba(15, 17, 26, 0.95);
+  border: 1px solid var(--border-pr);
+  border-radius: var(--radius-md);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7), 0 0 30px rgba(153, 153, 255, 0.2);
+  overflow: hidden;
+}
+
+.window-header {
+  background: #141622;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.window-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.dot.red { background: #ff5f56; }
+.dot.yellow { background: #ffbd2e; }
+.dot.green { background: #27c93f; }
+
+.window-title {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+
+.window-tools {
+  display: flex;
+  gap: 6px;
+}
+
+.tool-icon {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  background: rgba(255, 255, 255, 0.05);
+  color: #64748b;
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+.tool-icon.active {
+  background: var(--pr-brand);
+  color: #000;
+  font-weight: 700;
+}
+
+.timeline-viewport {
+  position: relative;
+  padding: 16px;
+  background: #0b0d14;
+  overflow: hidden;
+}
+
+#heroSpectrumCanvas {
+  width: 100%;
+  height: 90px;
+  display: block;
+  margin-bottom: 16px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: var(--radius-sm);
+}
+
+.track-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.track {
+  height: 32px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 4px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
+}
+
+.track-name {
+  position: absolute;
+  left: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: #64748b;
+}
+
+.clip {
+  position: absolute;
+  height: 24px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: #000;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.purple-clip { background: #d699ff; border-left: 3px solid #7928ca; }
+.cyan-clip { background: #00f2fe; border-left: 3px solid #0070f3; }
+.blue-clip { background: #9999ff; border-left: 3px solid #3b82f6; }
+.green-clip { background: #00ff87; border-left: 3px solid #10b981; }
+
+.timeline-playhead {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 30%;
+  width: 2px;
+  background: #ff3366;
+  pointer-events: none;
+  z-index: 10;
+  box-shadow: 0 0 10px #ff3366;
+  animation: scrubPlayhead 8s linear infinite;
+}
+
+.playhead-head {
+  width: 12px;
+  height: 12px;
+  background: #ff3366;
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  margin-left: -5px;
+}
+
+@keyframes scrubPlayhead {
+  0% { left: 15%; }
+  100% { left: 90%; }
+}
+
+/* ==========================================================================
+   COLOR GRADING BEFORE/AFTER SPLIT SLIDER
+   ========================================================================== */
+
+.split-slider-container {
+  width: 100%;
+  max-width: 1000px;
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border-glow);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+  user-select: none;
+}
+
+.split-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.image-before {
+  /* LOG Footage (Low Contrast, Flat Slate) */
+  background-image: linear-gradient(rgba(100, 110, 120, 0.5), rgba(100, 110, 120, 0.5)), 
+                    radial-gradient(circle, #2d3748 0%, #1a202c 100%);
+  filter: contrast(0.65) saturate(0.5) brightness(1.1);
+}
+
+.image-after {
+  /* Rec.709 Cinematic Color Grade */
+  background-image: linear-gradient(rgba(0, 242, 254, 0.1), rgba(121, 40, 202, 0.2)), 
+                    radial-gradient(circle, #0f172a 0%, #020617 100%);
+  filter: contrast(1.35) saturate(1.4) brightness(1.05);
+  width: 50%; /* Initial split at 50% */
+  border-right: 2px solid var(--cyan-neon);
+}
+
+.split-label {
+  position: absolute;
+  top: 20px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  z-index: 5;
+}
+
+.label-log {
+  left: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #94a3b8;
+}
+
+.label-graded {
+  right: 20px;
+  background: rgba(0, 242, 254, 0.2);
+  border: 1px solid var(--cyan-neon);
+  color: var(--cyan-neon);
+  backdrop-filter: blur(8px);
+}
+
+.slider-handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background: var(--cyan-neon);
+  box-shadow: 0 0 15px var(--cyan-neon);
+  cursor: ew-resize;
+  z-index: 10;
+  transform: translateX(-50%);
+}
+
+.handle-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--cyan-neon);
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px var(--cyan-neon);
+}
