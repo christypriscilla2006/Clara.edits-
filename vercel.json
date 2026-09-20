@@ -1,9 +1,6 @@
 {
-  "version": 2,
-  "public": true,
   "cleanUrls": true,
-  "rewrites": [
-    { "source": "/", "destination": "/portfolio/index.html" },
-    { "source": "/portfolio", "destination": "/portfolio/index.html" }
+  "redirects": [
+    { "source": "/", "destination": "/portfolio/index.html", "permanent": false }
   ]
 }
