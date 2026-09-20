@@ -31,14 +31,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (heroBio) heroBio.textContent = prof.bio || 'Clara — 2.5+ years of experience in video editing and motion graphics.';
     if (taglineText) taglineText.textContent = prof.tagline || 'SHARP & INTENTIONAL VISUAL STORYTELLING';
     
-    if (statExp) statExp.textContent = prof.stats?.experience || '2.5+ YRS';
-    if (statLocation) statLocation.textContent = prof.stats?.location || 'Chennai, India';
-    if (statAvailability) statAvailability.textContent = prof.stats?.availability || 'Freelance & In-House';
+    if (statExp) statExp.innerHTML = `2.5+ <span class="unit">YRS</span>`;
+    if (statLocation) statLocation.textContent = prof.stats?.location || 'Chennai';
+    if (statAvailability) statAvailability.textContent = prof.stats?.availability || 'Freelance';
     if (statViews) statViews.textContent = prof.stats?.viewsGenerated || '10M+';
 
-    if (contactEmail) contactEmail.textContent = prof.contact?.email || 'clara.visuals@example.com';
-    if (contactInsta) contactInsta.textContent = prof.contact?.instagram || '@clara_visuals';
-    if (contactDiscord) contactDiscord.textContent = prof.contact?.discord || 'clara_visuals';
+    if (contactEmail) contactEmail.textContent = prof.contact?.email || 'clara.edit2904@gmail.com';
     if (contactMailBtn && prof.contact?.email) {
       contactMailBtn.href = `mailto:${prof.contact.email}`;
     }

@@ -16,8 +16,8 @@ window.PORTFOLIO_DATA = {
     logo: "clara_logo.png",
     stats: {
       experience: "2.5+ YRS",
-      location: "Chennai, India",
-      availability: "Freelance & In-House",
+      location: "Chennai",
+      availability: "Freelance",
       viewsGenerated: "10M+",
       avgRetention: "68%",
       projectsDelivered: "150+"
@@ -25,8 +25,7 @@ window.PORTFOLIO_DATA = {
     contact: {
       email: "clara.edit2904@gmail.com",
       phone1: "+91 73584 99043",
-      phone2: "+91 9363562810",
-      instagram: "@clara_visuals"
+      phone2: "+91 93635 62810"
     }
   },
 
