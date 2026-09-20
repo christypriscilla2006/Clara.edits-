@@ -30,10 +30,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (headerTitle) headerTitle.textContent = prof.title || 'PREMIERE PRO & MOTION GRAPHICS SPECIALIST';
     if (heroBio) heroBio.textContent = prof.bio || 'Clara — 2.5+ years of experience in video editing and motion graphics.';
     if (taglineText) taglineText.textContent = prof.tagline || 'SHARP & INTENTIONAL VISUAL STORYTELLING';
-    
+
     if (statExp) statExp.innerHTML = `2.5+ <span class="unit">YRS</span>`;
     if (statLocation) statLocation.textContent = prof.stats?.location || 'Chennai';
-    if (statAvailability) statAvailability.textContent = prof.stats?.availability || 'Freelance';
+    if (statAvailability) statAvailability.textContent = prof.stats?.availability || 'Freelance & In-House';
     if (statViews) statViews.textContent = prof.stats?.viewsGenerated || '10M+';
 
     if (contactEmail) contactEmail.textContent = prof.contact?.email || 'clara.edit2904@gmail.com';
@@ -45,9 +45,19 @@ document.addEventListener('DOMContentLoaded', () => {
   // 2. Optimized Project Grid Renderer
   const gridContainer = document.getElementById('projectGrid');
 
+  function isDirectVideoUrl(url) {
+    if (!url) return false;
+    const clean = url.toLowerCase().split('?')[0];
+    return clean.endsWith('.mp4') ||
+           clean.endsWith('.webm') ||
+           clean.endsWith('.mov') ||
+           url.includes('vercel-storage.com') ||
+           url.includes('blob.vercel-storage.com');
+  }
+
   function renderProjects() {
     if (!gridContainer) return;
-    
+
     const projects = data.projects || [];
     const filtered = projects.filter(proj => {
       const matchCat = (currentCategory === 'All') || (proj.category === currentCategory);
@@ -60,11 +70,11 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="project-card" style="grid-column: 1 / -1; cursor: default;">
           <div class="empty-card-state" style="padding: 40px;">
             <div class="empty-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
             </div>
             <div class="empty-text">
               No videos matching "${currentCategory}" (${currentRatio.toUpperCase()}).<br>
-              Click <strong>"Add / Manage Data"</strong> to insert your content!
+              Try changing category or ratio filters above.
             </div>
           </div>
         </div>
@@ -79,14 +89,12 @@ document.addEventListener('DOMContentLoaded', () => {
       const card = document.createElement('div');
       const ratioClass = proj.aspectRatio === '9:16' ? 'ratio-9-16' : 'ratio-16-9';
       card.className = `project-card ${ratioClass}`;
-      
+
       let mediaContentHTML = '';
-      
+
       if (proj.videoUrl && proj.videoUrl.trim() !== '') {
-        const isLocalVideo = proj.videoUrl.endsWith('.mp4') || proj.videoUrl.endsWith('.MP4') || proj.videoUrl.endsWith('.webm');
-        
-        if (isLocalVideo) {
-          // Preload metadata only for fast page load
+        if (isDirectVideoUrl(proj.videoUrl)) {
+          // Preload metadata only for fast initial page load and lazy loading
           mediaContentHTML = `
             <video class="card-thumb-media" muted preload="metadata" playsinline>
               <source src="${proj.videoUrl}" type="video/mp4">
@@ -167,12 +175,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     modalMediaContainer.innerHTML = '';
     if (proj.videoUrl && proj.videoUrl.trim() !== '') {
-      const isLocal = proj.videoUrl.endsWith('.mp4') || proj.videoUrl.endsWith('.MP4');
-      if (isLocal) {
+      if (isDirectVideoUrl(proj.videoUrl)) {
         modalMediaContainer.innerHTML = `
-          <video controls autoplay playsinline style="width: 100%; height: 100%;">
+          <video controls autoplay playsinline preload="metadata" style="width: 100%; height: 100%;">
             <source src="${proj.videoUrl}" type="video/mp4">
-            Your browser does not support video tag.
+            Your browser does not support HTML5 video playback.
           </video>
         `;
       } else if (proj.videoUrl.includes('youtube.com') || proj.videoUrl.includes('youtu.be')) {
@@ -271,7 +278,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (addProjectForm) {
     addProjectForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      
+
       const newProj = {
         id: 'proj-' + Date.now(),
         title: document.getElementById('inputTitle').value,

@@ -1,3 +1,7 @@
-# Node / temp logs
+# Ignore large original raw MP4 video files (stored in Vercel Blob)
+BRAND SHOOT/*.MP4
+BRAND SHOOT/*.mp4
+
+# Node & temp files
 node_modules/
 .DS_Store
