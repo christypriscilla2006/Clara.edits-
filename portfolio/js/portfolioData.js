@@ -9,6 +9,7 @@
 
 window.VERCEL_BLOB_VIDEOS = {
   // Replace these with your actual Vercel Blob URLs after uploading to Vercel Storage
+  "CHENNAI_SILKS_CAMPAIGN": "",
   "CHENNAI_SILKS_1": "",
   "CHENNAI_SILKS_2": "",
   "CHENNAI_SILKS_3": "",
@@ -64,6 +65,18 @@ window.PORTFOLIO_DATA = {
   ],
 
   projects: [
+    // ─── CHENNAI SILKS — Campaign Cut (Featured First) ───
+    {
+      id: "proj-cs-0",
+      title: "Chennai Silks — Campaign Cut",
+      category: "Social Media",
+      aspectRatio: "9:16",
+      videoUrl: getBlobUrl("CHENNAI_SILKS_CAMPAIGN", "/BRAND SHOOT/WhatsApp Video 2026-09-22 at 16.56.05.mp4"),
+      thumbnailUrl: "",
+      description: "Hero campaign cut for Chennai Silks — high-impact commercial reel showcasing luxury textiles with kinetic motion pacing.",
+      tools: ["Premiere Pro", "DaVinci Resolve", "After Effects"],
+      client: "Chennai Silks"
+    },
     // ─── CHENNAI SILKS — Brand Commercial (Social Media) ───
     {
       id: "proj-cs-1",
