@@ -36,12 +36,12 @@ window.PORTFOLIO_DATA = {
     name: "CLARA",
     title: "PREMIERE PRO & MOTION GRAPHICS SPECIALIST",
     tagline: "SHARP & INTENTIONAL VISUAL STORYTELLING",
-    bio: "Clara (Christy & Suraya) — 2.5+ years of experience in high-impact video editing, kinetic motion graphics, and sharp visual storytelling. Crafting clean, elegant, and retention-driven post-production for brands & creators.",
+    bio: "Clara — 2.5+ years of experience in high-impact video editing, kinetic motion graphics, and sharp visual storytelling. Crafting clean, elegant, and retention-driven post-production for brands & creators.",
     logo: "clara_logo.png",
     stats: {
       experience: "2.5+ YRS",
       location: "Chennai",
-      availability: "Freelance",
+      availability: "Freelance & In-House",
       viewsGenerated: "10M+",
       avgRetention: "68%",
       projectsDelivered: "150+"

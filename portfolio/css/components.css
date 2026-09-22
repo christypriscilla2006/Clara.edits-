@@ -52,20 +52,20 @@
 .editor-name {
   font-family: var(--font-heading);
   font-weight: 900;
-  font-size: 1.7rem;
+  font-size: 2.4rem;
   letter-spacing: 0.05em;
   color: #ffffff;
-  text-shadow: 0 0 14px rgba(0, 229, 255, 0.4);
-  line-height: 1.1;
+  text-shadow: 0 0 18px rgba(0, 229, 255, 0.5);
+  line-height: 1.05;
 }
 
 .editor-title {
   font-family: var(--font-mono);
-  font-size: 0.78rem;
+  font-size: 0.84rem;
   font-weight: 600;
   color: #38bdf8;
-  letter-spacing: 0.12em;
-  margin-top: 2px;
+  letter-spacing: 0.14em;
+  margin-top: 3px;
 }
 
 .main-nav {
@@ -960,11 +960,11 @@ input:focus, select:focus, textarea:focus {
 
 /* ─── CLARA Logo in nav ───────────────────────── */
 .clara-logo-img {
-  height: 72px;
+  height: 90px;
   width: auto;
   object-fit: contain;
   border-radius: 6px;
-  filter: drop-shadow(0 0 10px rgba(0,229,255,0.35));
+  filter: drop-shadow(0 0 12px rgba(0,229,255,0.4));
   transition: filter 0.3s ease, transform 0.3s ease;
 }
 .clara-logo-img:hover {
