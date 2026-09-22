@@ -154,24 +154,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 3. Fast Video Modal Functionality
   const videoModal = document.getElementById('videoModal');
+  const videoModalContainer = document.getElementById('videoModalContainer');
   const closeModalBtn = document.getElementById('closeModalBtn');
   const modalMediaContainer = document.getElementById('modalMediaContainer');
-  const modalCategory = document.getElementById('modalCategory');
-  const modalRatio = document.getElementById('modalRatio');
-  const modalTitle = document.getElementById('modalTitle');
-  const modalDesc = document.getElementById('modalDesc');
-  const modalTools = document.getElementById('modalTools');
-  const modalClient = document.getElementById('modalClient');
 
   function openVideoModal(proj) {
     if (!videoModal) return;
 
-    modalCategory.textContent = proj.category;
-    modalRatio.textContent = proj.aspectRatio;
-    modalTitle.textContent = proj.title;
-    modalDesc.textContent = proj.description || 'No description provided yet.';
-    modalClient.textContent = proj.client || '--';
-    modalTools.innerHTML = (proj.tools || []).map(t => `<span class="card-tool-tag">${t}</span>`).join('');
+    if (videoModalContainer) {
+      if (proj.aspectRatio === '9:16') {
+        videoModalContainer.classList.add('vertical-modal');
+      } else {
+        videoModalContainer.classList.remove('vertical-modal');
+      }
+    }
 
     modalMediaContainer.innerHTML = '';
     if (proj.videoUrl && proj.videoUrl.trim() !== '') {
@@ -198,7 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <div class="empty-icon">+</div>
           <div class="empty-text">
             No video URL attached to this item.<br>
-            Paste your YouTube link or local MP4 path in <strong>js/portfolioData.js</strong>!
+            Paste your video URL in <strong>js/portfolioData.js</strong>!
           </div>
         </div>
       `;
