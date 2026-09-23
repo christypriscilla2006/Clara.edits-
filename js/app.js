@@ -139,7 +139,6 @@ document.addEventListener('DOMContentLoaded', () => {
             <span class="card-ratio-badge">${proj.aspectRatio}</span>
           </div>
           <h4 class="card-project-title">${proj.title}</h4>
-          <div class="card-tools-row">${toolsList}</div>
         </div>
       `;
 
