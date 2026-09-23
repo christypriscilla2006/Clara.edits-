@@ -73,7 +73,7 @@ window.PORTFOLIO_DATA = {
       aspectRatio: "9:16",
       videoUrl: getBlobUrl("CHENNAI_SILKS_CAMPAIGN", "/BRAND SHOOT/WhatsApp Video 2026-09-22 at 16.56.05.mp4"),
       thumbnailUrl: "",
-      description: "Hero campaign cut for Chennai Silks — high-impact commercial reel showcasing luxury textiles with kinetic motion pacing.",
+      description: "",
       tools: ["Premiere Pro", "DaVinci Resolve", "After Effects"],
       client: "Chennai Silks"
     },
@@ -85,7 +85,7 @@ window.PORTFOLIO_DATA = {
       aspectRatio: "16:9",
       videoUrl: getBlobUrl("CHENNAI_SILKS_1", "/BRAND SHOOT/CHENNAI SILKS.MP4"),
       thumbnailUrl: "",
-      description: "Hero brand commercial edit for Chennai Silks — crisp cuts, color correction, premium pacing for a luxury textile brand.",
+      description: "",
       tools: ["Premiere Pro", "DaVinci Resolve", "After Effects"],
       client: "Chennai Silks"
     },
@@ -96,7 +96,7 @@ window.PORTFOLIO_DATA = {
       aspectRatio: "16:9",
       videoUrl: getBlobUrl("CHENNAI_SILKS_2", "/BRAND SHOOT/CHENNAI SILKS(1).MP4"),
       thumbnailUrl: "",
-      description: "Second campaign variation — alternate pacing and color mood for Chennai Silks brand shoot.",
+      description: "",
       tools: ["Premiere Pro", "DaVinci Resolve"],
       client: "Chennai Silks"
     },
@@ -107,7 +107,7 @@ window.PORTFOLIO_DATA = {
       aspectRatio: "16:9",
       videoUrl: getBlobUrl("CHENNAI_SILKS_3", "/BRAND SHOOT/CHENNAI SILKS(2).MP4"),
       thumbnailUrl: "",
-      description: "Deep cinematic color grade pass — LOG to Rec.709 with rich warm tones and luxury feel for textiles.",
+      description: "",
       tools: ["DaVinci Resolve", "Lumetri Color"],
       client: "Chennai Silks"
     },
@@ -118,7 +118,7 @@ window.PORTFOLIO_DATA = {
       aspectRatio: "16:9",
       videoUrl: getBlobUrl("CHENNAI_SILKS_4", "/BRAND SHOOT/CHENNAI SILKS(3).MP4"),
       thumbnailUrl: "",
-      description: "Full-length commercial production cut showcasing fabric details, movement, and lifestyle styling.",
+      description: "",
       tools: ["Premiere Pro", "After Effects"],
       client: "Chennai Silks"
     },
@@ -129,7 +129,7 @@ window.PORTFOLIO_DATA = {
       aspectRatio: "16:9",
       videoUrl: getBlobUrl("CHENNAI_SILKS_5", "/BRAND SHOOT/CHENNAI SILKS(4).MP4"),
       thumbnailUrl: "",
-      description: "Final campaign variant — fast-hook version optimized for social media ad placements.",
+      description: "",
       tools: ["Premiere Pro", "Lumetri Color"],
       client: "Chennai Silks"
     },
@@ -142,7 +142,7 @@ window.PORTFOLIO_DATA = {
       aspectRatio: "16:9",
       videoUrl: getBlobUrl("THINK_MUSIC_1", "/BRAND SHOOT/Think music.mp4"),
       thumbnailUrl: "",
-      description: "Full-length YouTube edit for Think Music — high-retention cuts, beat-sync transitions, and visual storytelling aligned to the track.",
+      description: "",
       tools: ["Premiere Pro", "After Effects"],
       client: "Think Music"
     },
@@ -153,7 +153,7 @@ window.PORTFOLIO_DATA = {
       aspectRatio: "16:9",
       videoUrl: getBlobUrl("THINK_MUSIC_2", "/BRAND SHOOT/Think music(1).mp4"),
       thumbnailUrl: "",
-      description: "Secondary Think Music cut featuring motion graphics overlays, kinetic typography, and fast pacing.",
+      description: "",
       tools: ["Premiere Pro", "After Effects"],
       client: "Think Music"
     },
@@ -164,7 +164,7 @@ window.PORTFOLIO_DATA = {
       aspectRatio: "16:9",
       videoUrl: getBlobUrl("THINK_MUSIC_3", "/BRAND SHOOT/THINK MUSIC(2).MP4"),
       thumbnailUrl: "",
-      description: "Third Think Music YouTube cut — clean pacing with lower thirds and animated text overlays.",
+      description: "",
       tools: ["Premiere Pro", "After Effects"],
       client: "Think Music"
     },
@@ -177,7 +177,7 @@ window.PORTFOLIO_DATA = {
       aspectRatio: "9:16",
       videoUrl: getBlobUrl("BTS_1", "/BRAND SHOOT/BE55BE68-DCFF-4C30-AB93-ADCD7BE40A41.MP4"),
       thumbnailUrl: "",
-      description: "Fast-paced vertical BTS reel — dynamic transitions and sound-sync cuts.",
+      description: "",
       tools: ["Premiere Pro", "After Effects"],
       client: "Brand BTS"
     },
@@ -188,7 +188,7 @@ window.PORTFOLIO_DATA = {
       aspectRatio: "9:16",
       videoUrl: getBlobUrl("BTS_2", "/BRAND SHOOT/1E5C5A1A-748C-485B-AB33-DFA66409E512.MP4"),
       thumbnailUrl: "",
-      description: "Vertical BTS clip — kinetic pacing with quick scene transitions for Instagram Reels.",
+      description: "",
       tools: ["Premiere Pro", "After Effects"],
       client: "Brand BTS"
     },
@@ -199,7 +199,7 @@ window.PORTFOLIO_DATA = {
       aspectRatio: "9:16",
       videoUrl: getBlobUrl("BTS_3", "/BRAND SHOOT/26A17755-2E33-4AE9-AC76-B71F839FA6C9.MP4"),
       thumbnailUrl: "",
-      description: "Behind-the-scenes production short — high-energy sound design and color grade.",
+      description: "",
       tools: ["Premiere Pro", "DaVinci Resolve"],
       client: "Brand BTS"
     },
@@ -210,7 +210,7 @@ window.PORTFOLIO_DATA = {
       aspectRatio: "9:16",
       videoUrl: getBlobUrl("BTS_4", "/BRAND SHOOT/B8BE5A3C-0CE5-4F82-BE6F-3CFB75A4F44C.MP4"),
       thumbnailUrl: "",
-      description: "Vertical BTS reel — immersive on-set footage with fast rhythm-matched editing.",
+      description: "",
       tools: ["Premiere Pro", "After Effects"],
       client: "Brand BTS"
     },
@@ -221,7 +221,7 @@ window.PORTFOLIO_DATA = {
       aspectRatio: "9:16",
       videoUrl: getBlobUrl("BTS_5", "/BRAND SHOOT/BE12E41D-63EB-41E9-91A9-C9D24F4DF3AF.MP4"),
       thumbnailUrl: "",
-      description: "Ultra-short vertical BTS clip — punchy hook-first edit designed for Reels/Shorts.",
+      description: "",
       tools: ["Premiere Pro"],
       client: "Brand BTS"
     },
@@ -232,7 +232,7 @@ window.PORTFOLIO_DATA = {
       aspectRatio: "9:16",
       videoUrl: getBlobUrl("BTS_6", "/BRAND SHOOT/DF2C2FD4-CCAF-4B2E-AFFE-618B36EE4C58.MP4"),
       thumbnailUrl: "",
-      description: "Sixth BTS vertical reel — cinematic behind-the-scenes moments with color grading.",
+      description: "",
       tools: ["Premiere Pro", "DaVinci Resolve"],
       client: "Brand BTS"
     },
@@ -243,7 +243,7 @@ window.PORTFOLIO_DATA = {
       aspectRatio: "9:16",
       videoUrl: getBlobUrl("BTS_7", "/BRAND SHOOT/WhatsApp Video 2026-09-17 at 11.55.09 (1).mp4"),
       thumbnailUrl: "",
-      description: "Quick-cut BTS Reel — spontaneous on-set moments edited with smooth transitions.",
+      description: "",
       tools: ["Premiere Pro"],
       client: "Brand BTS"
     }
