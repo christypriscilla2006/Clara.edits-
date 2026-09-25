@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Video Editor & Motion Designer Portfolio</title>
-  <meta name="description" content="Professional Premiere Pro, Motion Graphics, and Content Production Portfolio. Inspired by Behance & Gravitas aesthetics.">
+  <title>CLARA — Video Editing & Motion Design Studio</title>
+  <meta name="description" content="CLARA is a premium video editing and motion design studio. We turn raw footage into content people actually want to watch.">
   
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,75 +18,59 @@
 </head>
 <body class="gravitas-theme">
 
-  <!-- Interactive Gravitas VIT Background Canvas -->
+  <!-- Interactive Background Canvas & Ambient Light -->
   <canvas id="gravitasCanvas"></canvas>
   <div class="cyber-grid-overlay"></div>
   <div class="ambient-glow glow-1"></div>
   <div class="ambient-glow glow-2"></div>
   <div class="ambient-glow glow-3"></div>
 
-  <!-- Premiere Pro HUD Top Header Bar -->
+  <!-- Header / Navigation Bar -->
   <header class="premiere-header">
     <div class="nav-container">
-      <div class="brand-logo">
-        <img src="clara_logo.png" alt="CLARA Logo" class="clara-logo-img" style="height:90px;width:auto;object-fit:contain;border-radius:4px;">
+      <a href="#" class="brand-logo" style="text-decoration: none;">
+        <img src="clara_logo.png" alt="CLARA Studio Logo" class="clara-logo-img">
         <div class="brand-text">
           <span class="editor-name" id="headerName">CLARA</span>
-          <span class="editor-title" id="headerTitle">PREMIERE PRO & MOTION GRAPHICS SPECIALIST</span>
+          <span class="editor-title" id="headerTitle">VIDEO EDITING & MOTION DESIGN STUDIO</span>
         </div>
-      </div>
+      </a>
 
       <nav class="main-nav">
-        <a href="#expertise" class="nav-link active">Expertise</a>
-        <a href="#showcase" class="nav-link">Showcase</a>
+        <a href="#work" class="nav-link">Featured Work</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#why-clara" class="nav-link">Why CLARA</a>
         <a href="#workflow" class="nav-link">Workflow</a>
-        <a href="#contact" class="btn-neon"><span class="btn-content">Get in Touch</span></a>
+        <a href="#tools" class="nav-link">Tools</a>
+        <a href="#contact" class="btn-neon"><span class="btn-content">START A PROJECT</span></a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero-section">
+  <!-- 1. Hero Section -->
+  <section class="hero-section" id="hero">
     <div class="hero-container">
       <div class="hero-content">
         <div class="tagline-badge">
           <span class="badge-icon">⚡</span>
-          <span id="taglineText">SHARP & INTENTIONAL VISUAL STORYTELLING</span>
+          <span>VIDEO EDITING × MOTION × VISUAL STORYTELLING</span>
         </div>
         
         <h1 class="hero-title">
-          CRAFTING VISUAL <span class="gradient-text">MASTERPIECES</span> & RETENTION-DRIVEN CUTS
+          WE TURN RAW FOOTAGE INTO CONTENT PEOPLE <span class="gradient-text">ACTUALLY WANT TO WATCH.</span>
         </h1>
         
-        <p class="hero-description" id="heroBio">
-          Clara — 2.5+ years of experience in high-impact video editing, kinetic motion graphics, and sharp visual storytelling. Elegant, intentional, and high-retention post-production.
+        <p class="hero-description">
+          A premium post-production studio crafting retention-driven long-form edits, viral short-form clips, cinematic brand films, and fluid motion graphics.
         </p>
 
-        <!-- Quick Stats & Status HUD -->
-        <div class="hero-stats-hud">
-          <div class="hud-stat-item">
-            <div class="hud-stat-value gradient-text" id="statExp">2.5+ <span class="unit">YRS</span></div>
-            <div class="hud-stat-label">EXPERIENCE</div>
-          </div>
-          <div class="hud-stat-divider"></div>
-          <div class="hud-stat-item">
-            <div class="hud-stat-value gradient-text" id="statLocation">Chennai</div>
-            <div class="hud-stat-label">LOCATION (IN)</div>
-          </div>
-          <div class="hud-stat-divider"></div>
-          <div class="hud-stat-item">
-            <div class="hud-stat-value gradient-text" id="statAvailability">Freelance & In-House</div>
-            <div class="hud-stat-label">AVAILABILITY</div>
-          </div>
-          <div class="hud-stat-divider"></div>
-          <div class="hud-stat-item">
-            <div class="hud-stat-value gradient-text" id="statViews">10M+</div>
-            <div class="hud-stat-label">VIEWS GENERATED</div>
-          </div>
+        <div class="hero-actions">
+          <a href="#work" class="btn-primary-neon">VIEW OUR WORK</a>
+          <a href="#contact" class="btn-secondary-outline">START A PROJECT</a>
         </div>
       </div>
 
-      <!-- Premiere Pro Audio Waveform & Timeline Visual Box -->
+      <!-- Hero Cinematic Timeline Window -->
       <div class="hero-timeline-box">
         <div class="timeline-window">
           <div class="window-header">
@@ -95,35 +79,32 @@
               <span class="dot yellow"></span>
               <span class="dot green"></span>
             </div>
-            <div class="window-title">Sequence 01_MainEdit.prproj</div>
+            <div class="window-title">CLARA_Studio_MasterSequence.prproj</div>
             <div class="window-tools">
               <span class="tool-icon active">V1</span>
               <span class="tool-icon">A1</span>
-              <span class="tool-icon">A2</span>
+              <span class="tool-icon">FX</span>
             </div>
           </div>
           <div class="timeline-viewport">
-            <!-- Simulated Spectrum Audio Visualizer -->
-            <canvas id="heroSpectrumCanvas" width="500" height="100"></canvas>
+            <canvas id="heroSpectrumCanvas" width="500" height="90"></canvas>
 
-            <!-- Premiere Tracks Representation -->
             <div class="track-list">
               <div class="track v-track">
                 <span class="track-name">V2 Motion FX</span>
-                <div class="clip purple-clip" style="left: 10%; width: 40%;">Kinetic Titles</div>
-                <div class="clip cyan-clip" style="left: 55%; width: 35%;">AI Overlay</div>
+                <div class="clip purple-clip" style="left: 8%; width: 42%;">Kinetic Motion & Graphics</div>
+                <div class="clip cyan-clip" style="left: 54%; width: 38%;">AI-Assisted Grade</div>
               </div>
               <div class="track v-track">
-                <span class="track-name">V1 Main Cut</span>
-                <div class="clip blue-clip" style="left: 0%; width: 95%;">A-Roll & B-Roll Master</div>
+                <span class="track-name">V1 Main Edit</span>
+                <div class="clip blue-clip" style="left: 0%; width: 96%;">Narrative Cut & Retention Hook</div>
               </div>
               <div class="track a-track">
                 <span class="track-name">A1 Audio Mix</span>
-                <div class="clip green-clip" style="left: 0%; width: 95%;">Sound Design + SFX</div>
+                <div class="clip green-clip" style="left: 0%; width: 96%;">Sound Design & Foley Sync</div>
               </div>
             </div>
 
-            <!-- Playhead Scrub Line -->
             <div class="timeline-playhead" id="heroPlayhead">
               <div class="playhead-head"></div>
               <div class="playhead-line"></div>
@@ -134,155 +115,30 @@
     </div>
   </section>
 
-  <!-- Expertise Grid Section -->
-  <section class="expertise-section" id="expertise">
-    <div class="section-container">
-      <div class="section-header text-center">
-        <div class="section-tag">CORE COMPETENCIES</div>
-        <h2 class="section-title">SPECIALIZED <span class="gradient-text">EXPERTISE</span></h2>
-        <p class="section-subtitle">Tailored post-production workflows designed for maximum visual impact and audience engagement.</p>
-      </div>
-
-      <div class="expertise-grid">
-        <!-- 1. YouTube Editing -->
-        <div class="expertise-card" data-category="youtube">
-          <div class="card-glow"></div>
-          <div class="expertise-icon youtube-accent">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-          </div>
-          <h3 class="expertise-title">YouTube Editing</h3>
-          <p class="expertise-desc">High-retention storytelling, fast-paced hook engineering, sound design, and custom graphic pop-ups built for long-form creators.</p>
-          <div class="expertise-tags">
-            <span>Hook Pacing</span>
-            <span>Pattern Interrupts</span>
-            <span>4K Workflow</span>
-          </div>
-          <button class="expertise-filter-btn" data-filter="YouTube Editing">Filter Category &rarr;</button>
-        </div>
-
-        <!-- 2. Reels & Shorts -->
-        <div class="expertise-card" data-category="reels">
-          <div class="card-glow"></div>
-          <div class="expertise-icon reels-accent">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
-          </div>
-          <h3 class="expertise-title">Reels & Shorts</h3>
-          <p class="expertise-desc">Vertical 9:16 viral edits with ultra-fast transitions, dynamic kinetic captions, emoji popups, and sound effect timing.</p>
-          <div class="expertise-tags">
-            <span>9:16 Vertical</span>
-            <span>Viral Hooks</span>
-            <span>Fast Transitions</span>
-          </div>
-          <button class="expertise-filter-btn" data-filter="Reels & Shorts">Filter Category &rarr;</button>
-        </div>
-
-        <!-- 3. Motion Graphics -->
-        <div class="expertise-card" data-category="motion">
-          <div class="card-glow"></div>
-          <div class="expertise-icon motion-accent">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg>
-          </div>
-          <h3 class="expertise-title">Motion Graphics</h3>
-          <p class="expertise-desc">Custom After Effects animation, lower-thirds, kinetic typography, 3D element integration, and sleek logo reveals.</p>
-          <div class="expertise-tags">
-            <span>After Effects</span>
-            <span>2D/3D Anim</span>
-            <span>Lower Thirds</span>
-          </div>
-          <button class="expertise-filter-btn" data-filter="Motion Graphics">Filter Category &rarr;</button>
-        </div>
-
-        <!-- 4. AI Content Production -->
-        <div class="expertise-card" data-category="ai">
-          <div class="card-glow"></div>
-          <div class="expertise-icon ai-accent">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10H12V2z"/><path d="M12 12L2.1 12a10 10 0 0 1 9.9-10v10z"/></svg>
-          </div>
-          <h3 class="expertise-title">AI Content Production</h3>
-          <p class="expertise-desc">Integrating cutting-edge generative video AI, ElevenLabs voice synthesizers, Midjourney visuals, and AI video upscaling.</p>
-          <div class="expertise-tags">
-            <span>Generative AI</span>
-            <span>Topaz Upscale</span>
-            <span>AI Voice</span>
-          </div>
-          <button class="expertise-filter-btn" data-filter="AI Content Production">Filter Category &rarr;</button>
-        </div>
-
-        <!-- 5. Color Grading -->
-        <div class="expertise-card" data-category="color">
-          <div class="card-glow"></div>
-          <div class="expertise-icon color-accent">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 0 0 0 20z"/></svg>
-          </div>
-          <h3 class="expertise-title">Color Grading</h3>
-          <p class="expertise-desc">Transforming flat LOG footage into cinematic color spaces using DaVinci Resolve & Lumetri Color (Skin tone balancing, Mood LUTs).</p>
-          <div class="expertise-tags">
-            <span>LOG to Rec.709</span>
-            <span>DaVinci Resolve</span>
-            <span>Cinematic Look</span>
-          </div>
-          <button class="expertise-filter-btn" data-filter="Color Grading">Filter Category &rarr;</button>
-        </div>
-
-        <!-- 6. Subtitle Animation -->
-        <div class="expertise-card" data-category="subtitles">
-          <div class="card-glow"></div>
-          <div class="expertise-icon subtitles-accent">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-          </div>
-          <h3 class="expertise-title">Subtitle Animation</h3>
-          <p class="expertise-desc">Hormozi-style animated captions, highlighted key phrases, custom font typography, and synchronized sound effects.</p>
-          <div class="expertise-tags">
-            <span>Kinetic Captions</span>
-            <span>Word Highlights</span>
-            <span>SFX Sync</span>
-          </div>
-          <button class="expertise-filter-btn" data-filter="Subtitle Animation">Filter Category &rarr;</button>
-        </div>
-
-        <!-- 7. Social Media -->
-        <div class="expertise-card" data-category="social">
-          <div class="card-glow"></div>
-          <div class="expertise-icon social-accent">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-          </div>
-          <h3 class="expertise-title">Social Media</h3>
-          <p class="expertise-desc">Multi-platform video ad creatives, commercial hooks, brand trailers, and promotional social content engineered for conversion.</p>
-          <div class="expertise-tags">
-            <span>Ad Hooks</span>
-            <span>Brand Promos</span>
-            <span>Conversion Edits</span>
-          </div>
-          <button class="expertise-filter-btn" data-filter="Social Media">Filter Category &rarr;</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Showcase Section (Video Grid + Filter Controls) -->
-  <section class="showcase-section" id="showcase">
+  <!-- 2. Featured Work Section (Immediately below Hero) -->
+  <section class="showcase-section" id="work">
     <div class="section-container">
       <div class="showcase-header">
         <div>
-          <div class="section-tag">PORTFOLIO SHOWCASE</div>
-          <h2 class="section-title">PROJECT <span class="gradient-text">GALLERY</span></h2>
+          <div class="section-tag">PORTFOLIO CENTRIC</div>
+          <h2 class="section-title">FEATURED <span class="gradient-text">WORK</span></h2>
+          <p class="section-subtitle">Cinematic case studies and edits engineered for story, pacing, retention, and brand identity.</p>
         </div>
 
-        <!-- Controls: Category Filter + Aspect Ratio Switcher -->
         <div class="showcase-controls">
           <div class="filter-pills" id="categoryFilterPills">
-            <button class="pill-btn active" data-cat="All">All Expertise</button>
-            <button class="pill-btn" data-cat="YouTube Editing">YouTube</button>
+            <button class="pill-btn active" data-cat="All">All Work</button>
+            <button class="pill-btn" data-cat="YouTube">YouTube</button>
             <button class="pill-btn" data-cat="Reels & Shorts">Reels & Shorts</button>
-            <button class="pill-btn" data-cat="Motion Graphics">Motion FX</button>
-            <button class="pill-btn" data-cat="AI Content Production">AI Content</button>
-            <button class="pill-btn" data-cat="Color Grading">Color Grade</button>
-            <button class="pill-btn" data-cat="Subtitle Animation">Subtitles</button>
-            <button class="pill-btn" data-cat="Social Media">Social Media</button>
+            <button class="pill-btn" data-cat="Commercials">Commercials</button>
+            <button class="pill-btn" data-cat="Motion Graphics">Motion Graphics</button>
+            <button class="pill-btn" data-cat="AI-Assisted">AI-Assisted</button>
+            <button class="pill-btn" data-cat="Color">Color</button>
+            <button class="pill-btn" data-cat="Subtitles">Subtitles</button>
           </div>
 
           <div class="ratio-switcher">
-            <span class="ratio-label">ASPECT RATIO:</span>
+            <span class="ratio-label">ASPECT:</span>
             <button class="ratio-btn active" data-ratio="all">All</button>
             <button class="ratio-btn" data-ratio="16:9">16:9 Landscape</button>
             <button class="ratio-btn" data-ratio="9:16">9:16 Vertical</button>
@@ -290,166 +146,330 @@
         </div>
       </div>
 
-      <!-- Main Dynamic Project Grid -->
+      <!-- Project Cards Grid -->
       <div class="project-grid" id="projectGrid">
-        <!-- Javascript dynamically renders projects or empty slots here -->
+        <!-- Javascript renders projects dynamically here -->
       </div>
     </div>
   </section>
 
-  <!-- Workflow & Software Stack Section -->
+  <!-- 3. Services Section -->
+  <section class="expertise-section" id="services">
+    <div class="section-container">
+      <div class="section-header text-center">
+        <div class="section-tag">POST-PRODUCTION SERVICES</div>
+        <h2 class="section-title">OUR <span class="gradient-text">SERVICES</span></h2>
+        <p class="section-subtitle">Tailored editing solutions built to elevate visual quality, viewer retention, and brand presence.</p>
+      </div>
+
+      <div class="expertise-grid">
+        <!-- Service 1 -->
+        <div class="expertise-card">
+          <div class="card-glow"></div>
+          <div class="expertise-icon youtube-accent">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </div>
+          <h3 class="expertise-title">YouTube Editing</h3>
+          <p class="expertise-desc">High-retention storytelling, fast-paced hook engineering, sound design, and custom graphic pop-ups built for long-form creators and brands.</p>
+          <div class="expertise-tags">
+            <span>Hook Pacing</span>
+            <span>Pattern Interrupts</span>
+            <span>4K Master</span>
+          </div>
+          <button class="expertise-filter-btn" data-filter="YouTube">Explore YouTube Edits &rarr;</button>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="expertise-card">
+          <div class="card-glow"></div>
+          <div class="expertise-icon reels-accent">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+          </div>
+          <h3 class="expertise-title">Reels & Short-form</h3>
+          <p class="expertise-desc">Vertical 9:16 high-impact cuts with seamless transitions, dynamic kinetic captions, emoji callouts, and audio rhythm mapping.</p>
+          <div class="expertise-tags">
+            <span>9:16 Vertical</span>
+            <span>Viral Hooks</span>
+            <span>Rapid Cuts</span>
+          </div>
+          <button class="expertise-filter-btn" data-filter="Reels & Shorts">Explore Short-Form &rarr;</button>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="expertise-card">
+          <div class="card-glow"></div>
+          <div class="expertise-icon social-accent">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 10l5 5-5 5"/><path d="M4 4v7a4 4 0 0 0 4 4h12"/></svg>
+          </div>
+          <h3 class="expertise-title">Commercial & Brand Films</h3>
+          <p class="expertise-desc">Cinematic commercial cuts, promotional brand films, social campaign videos, and high-converting product launch showcases.</p>
+          <div class="expertise-tags">
+            <span>Brand Promos</span>
+            <span>Ad Campaigns</span>
+            <span>High Impact</span>
+          </div>
+          <button class="expertise-filter-btn" data-filter="Commercials">Explore Commercials &rarr;</button>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="expertise-card">
+          <div class="card-glow"></div>
+          <div class="expertise-icon motion-accent">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg>
+          </div>
+          <h3 class="expertise-title">Motion Graphics</h3>
+          <p class="expertise-desc">Fluid 2D/3D graphics, custom kinetic typography, lower-thirds, title animation, and brand logo reveals for cinematic visual impact.</p>
+          <div class="expertise-tags">
+            <span>2D/3D Anim</span>
+            <span>Kinetic Typography</span>
+            <span>Title Cards</span>
+          </div>
+          <button class="expertise-filter-btn" data-filter="Motion Graphics">Explore Motion Work &rarr;</button>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="expertise-card">
+          <div class="card-glow"></div>
+          <div class="expertise-icon color-accent">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 0 0 0 20z"/></svg>
+          </div>
+          <h3 class="expertise-title">Color Grading</h3>
+          <p class="expertise-desc">Transforming flat LOG footage into vibrant cinematic color spaces. Precision skin tone balancing, mood LUT development, and shot matching.</p>
+          <div class="expertise-tags">
+            <span>LOG Conversion</span>
+            <span>Skin Balance</span>
+            <span>Cinematic Look</span>
+          </div>
+          <button class="expertise-filter-btn" data-filter="Color">Explore Color Edits &rarr;</button>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="expertise-card">
+          <div class="card-glow"></div>
+          <div class="expertise-icon subtitles-accent">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3 class="expertise-title">Subtitles & Localization</h3>
+          <p class="expertise-desc">High-engagement animated captions, key phrase emphasis, custom font styling, and synchronized audio sound effect triggers.</p>
+          <div class="expertise-tags">
+            <span>Kinetic Captions</span>
+            <span>Keyframe Sync</span>
+            <span>Localization</span>
+          </div>
+          <button class="expertise-filter-btn" data-filter="Subtitles">Explore Subtitle Edits &rarr;</button>
+        </div>
+
+        <!-- Service 7: AI-Assisted Production -->
+        <div class="expertise-card full-width-card">
+          <div class="card-glow"></div>
+          <div class="expertise-icon ai-accent">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10H12V2z"/><path d="M12 12L2.1 12a10 10 0 0 1 9.9-10v10z"/></svg>
+          </div>
+          <h3 class="expertise-title">AI-Assisted Production</h3>
+          <p class="expertise-desc">We integrate modern AI tools into our studio pipeline to enhance visual generation, voice production, audio isolation, 4K upscaling, conceptual ideation, and post-production turnarounds. AI acts as an accelerator within CLARA's disciplined editing workflow, keeping human craft and story at the helm.</p>
+          <div class="expertise-tags">
+            <span>Generative Visuals</span>
+            <span>4K Upscaling</span>
+            <span>Voice Synthesis</span>
+            <span>Workflow Speedup</span>
+          </div>
+          <button class="expertise-filter-btn" data-filter="AI-Assisted">Explore AI-Assisted Edits &rarr;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Why CLARA Section -->
+  <section class="why-clara-section" id="why-clara">
+    <div class="section-container">
+      <div class="section-header text-center">
+        <div class="section-tag">OUR STANDARDS</div>
+        <h2 class="section-title">WHY <span class="gradient-text">CLARA</span></h2>
+        <p class="section-subtitle">Core principles that define our post-production methodology and deliver exceptional client outcomes.</p>
+      </div>
+
+      <div class="pillars-grid">
+        <div class="pillar-card">
+          <div class="pillar-number">01</div>
+          <h3 class="pillar-title">STORY FIRST</h3>
+          <p class="pillar-desc">Every cut, transition, and audio sting serves story, pacing, or emotion. We eliminate fluff to keep viewers locked into the narrative.</p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-number">02</div>
+          <h3 class="pillar-title">RETENTION FOCUSED</h3>
+          <p class="pillar-desc">Strong hooks, deliberate visual progression, dynamic sound design, and purposeful pattern interrupts to maintain high watch time.</p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-number">03</div>
+          <h3 class="pillar-title">BRAND CONSISTENCY</h3>
+          <p class="pillar-desc">A unified visual language, typography palette, and color grading signature across every piece of content created for your brand.</p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-number">04</div>
+          <h3 class="pillar-title">FAST ITERATION</h3>
+          <p class="pillar-desc">A structured studio workflow built for transparent communication, rapid feedback turnarounds, and frictionless final delivery.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Workflow Section -->
   <section class="workflow-section" id="workflow">
+    <div class="section-container">
+      <div class="section-header text-center">
+        <div class="section-tag">PRODUCTION PIPELINE</div>
+        <h2 class="section-title">STUDIO <span class="gradient-text">WORKFLOW</span></h2>
+        <p class="section-subtitle">Our structured 6-stage post-production pipeline from raw footage ingest to final 4K delivery.</p>
+      </div>
+
+      <div class="pipeline-track">
+        <div class="pipeline-step">
+          <div class="step-num">01</div>
+          <h4 class="step-title">BRIEF</h4>
+          <p class="step-desc">Footage ingest, project scope, target audience alignment, and narrative direction.</p>
+        </div>
+        <div class="pipeline-connector">→</div>
+        <div class="pipeline-step">
+          <div class="step-num">02</div>
+          <h4 class="step-title">STORY & EDIT</h4>
+          <p class="step-desc">A-roll assembly cut, retention hook placement, structural pacing, and narrative flow.</p>
+        </div>
+        <div class="pipeline-connector">→</div>
+        <div class="pipeline-step">
+          <div class="step-num">03</div>
+          <h4 class="step-title">MOTION & SOUND</h4>
+          <p class="step-desc">Kinetic typography, graphic overlays, Foley sound design, and audio mastering.</p>
+        </div>
+        <div class="pipeline-connector">→</div>
+        <div class="pipeline-step">
+          <div class="step-num">04</div>
+          <h4 class="step-title">COLOR</h4>
+          <p class="step-desc">LOG transformation, skin tone balancing, mood LUT grading, and visual polish.</p>
+        </div>
+        <div class="pipeline-connector">→</div>
+        <div class="pipeline-step">
+          <div class="step-num">05</div>
+          <h4 class="step-title">REVIEW</h4>
+          <p class="step-desc">Timestamped client review, feedback implementation, and detail fine-tuning.</p>
+        </div>
+        <div class="pipeline-connector">→</div>
+        <div class="pipeline-step final-step">
+          <div class="step-num">06</div>
+          <h4 class="step-title">FINAL DELIVERY</h4>
+          <p class="step-desc">Master 4K export, platform-optimized render formats, and master asset handoff.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Tools Section -->
+  <section class="tools-section" id="tools">
     <div class="section-container">
       <div class="section-header text-center">
         <div class="section-tag">TOOLSET & PIPELINE</div>
         <h2 class="section-title">POST-PRODUCTION <span class="gradient-text">SUITE</span></h2>
+        <p class="section-subtitle">Industry-standard editing, motion, and color software powering our studio work.</p>
       </div>
 
       <div class="software-suite-grid">
         <div class="suite-card">
           <div class="suite-badge pr">Pr</div>
           <h4>Adobe Premiere Pro</h4>
-          <p>Primary Non-Linear Editing, multi-cam cutting, audio assembly, and timeline master.</p>
+          <p>Primary Non-Linear Editing, multi-cam assembly, timeline structure, and master audio cuts.</p>
         </div>
         <div class="suite-card">
           <div class="suite-badge ae">Ae</div>
           <h4>After Effects</h4>
-          <p>2D/3D Motion Graphics, compositing, visual effects, visual tracking, and kinetic typography.</p>
+          <p>2D/3D Motion Graphics, compositing, visual tracking, title design, and kinetic animation.</p>
         </div>
         <div class="suite-card">
           <div class="suite-badge dv">Dv</div>
           <h4>DaVinci Resolve</h4>
-          <p>Advanced color wheel grading, skin-tone refinement, and node-based color pipelines.</p>
+          <p>Advanced color wheel grading, skin tone refinement, LUT creation, and node-based color pipelines.</p>
         </div>
         <div class="suite-card">
           <div class="suite-badge ai">AI</div>
-          <h4>AI Tools & Topaz</h4>
-          <p>ElevenLabs voice generation, Midjourney graphic synthesis, and Topaz Video AI upscale.</p>
+          <h4>AI Production Suite</h4>
+          <p>Topaz Video AI upscaling, ElevenLabs voice synthesis, AI noise reduction, and asset generation.</p>
         </div>
         <div class="suite-card">
           <div class="suite-badge ps">Ps</div>
           <h4>Photoshop</h4>
-          <p>Custom graphic creation, thumbnail design, alpha channel matte prep, and asset isolation.</p>
+          <p>Custom graphic asset isolation, alpha channel matte preparation, and visual thumbnail design.</p>
+        </div>
+        <div class="suite-card">
+          <div class="suite-badge au">Au</div>
+          <h4>Adobe Audition</h4>
+          <p>Spectral audio repair, voice isolation, sound FX master mixing, and loudness normalization.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact & Footer Section -->
+  <!-- 7. Contact Section -->
   <section class="contact-section" id="contact">
     <div class="section-container">
       <div class="contact-box">
         <div class="contact-content">
-          <div class="section-tag">LETS WORK TOGETHER</div>
-          <h2 class="contact-title">READY TO ELEVATE YOUR <span class="gradient-text">CONTENT?</span></h2>
-          <p class="contact-desc">Now accepting new project inquiries, channel retention audits, and full-time video editing opportunities.</p>
+          <div class="section-tag">START A PROJECT</div>
+          <h2 class="contact-title">HAVE FOOTAGE?<br><span class="gradient-text">LET'S TURN IT INTO SOMETHING PEOPLE REMEMBER.</span></h2>
+          <p class="contact-desc">Ready to elevate your YouTube content, commercial campaigns, or short-form reels? Connect with CLARA studio today.</p>
           
           <div class="contact-details">
             <div class="contact-item">
-              <span class="item-label">EMAIL:</span>
-              <a href="mailto:clara.edit2904@gmail.com" class="item-value contact-link" id="contactEmail">clara.edit2904@gmail.com</a>
+              <span class="item-label">BUSINESS EMAIL:</span>
+              <a href="mailto:clara.edit2904@gmail.com" class="item-value contact-link">clara.edit2904@gmail.com</a>
             </div>
             <div class="contact-item">
-              <span class="item-label">PHONE:</span>
+              <span class="item-label">BUSINESS ENQUIRIES:</span>
               <a href="tel:+917358499043" class="item-value contact-link">+91 73584 99043</a>
             </div>
             <div class="contact-item">
-              <span class="item-label">PHONE 2:</span>
-              <a href="tel:+919363562810" class="item-value contact-link">+91 93635 62810</a>
+              <span class="item-label">WHATSAPP:</span>
+              <a href="https://wa.me/919363562810" target="_blank" rel="noopener" class="item-value contact-link">+91 93635 62810</a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Footer -->
+  <footer class="footer-bar">
+    <div class="footer-container">
+      <div class="footer-left">
+        <span class="pr-icon-sm">CLARA</span>
+        <span>© 2026 CLARA — VIDEO EDITING & MOTION DESIGN STUDIO. ALL RIGHTS RESERVED.</span>
+      </div>
+      <div class="footer-right">
+        <span>CLARITY × LIGHT × VISUALS</span>
+      </div>
+    </div>
+  </footer>
 
   <!-- Modal Video Player Overlay -->
   <div class="video-modal-overlay" id="videoModal">
     <div class="video-modal-container" id="videoModalContainer">
-      <button class="modal-close-btn" id="closeModalBtn">&times;</button>
+      <button class="modal-close-btn" id="closeModalBtn" aria-label="Close modal">&times;</button>
       
       <div class="modal-video-frame">
         <div id="modalMediaContainer">
-          <!-- Video element or Embed iframe dynamically injected here -->
+          <!-- Video element or iframe dynamically injected here -->
         </div>
+      </div>
+      <div class="modal-details-drawer" id="modalDetailsDrawer">
+        <!-- Metadata drawer rendered dynamically -->
       </div>
     </div>
   </div>
 
-  <!-- Modal Add/Manage Data Overlay -->
-  <div class="data-modal-overlay" id="dataModal">
-    <div class="data-modal-container">
-      <div class="data-modal-header">
-        <h3>Manage Portfolio Content</h3>
-        <button class="modal-close-btn" id="closeDataModalBtn">&times;</button>
-      </div>
-
-      <div class="data-modal-body">
-        <p class="data-modal-intro">
-          You can edit your content in <strong>js/portfolioData.js</strong> or paste project data below to immediately add it to your active view!
-        </p>
-
-        <form id="addProjectForm">
-          <div class="form-group">
-            <label>Project Title *</label>
-            <input type="text" id="inputTitle" placeholder="e.g. Cinematic Tech Review - YouTube Edit" required>
-          </div>
-
-          <div class="form-row">
-            <div class="form-group">
-              <label>Expertise Category *</label>
-              <select id="inputCategory" required>
-                <option value="YouTube Editing">YouTube Editing</option>
-                <option value="Reels & Shorts">Reels & Shorts</option>
-                <option value="Motion Graphics">Motion Graphics</option>
-                <option value="AI Content Production">AI Content Production</option>
-                <option value="Color Grading">Color Grading</option>
-                <option value="Subtitle Animation">Subtitle Animation</option>
-                <option value="Social Media">Social Media</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label>Aspect Ratio *</label>
-              <select id="inputRatio" required>
-                <option value="16:9">16:9 Horizontal</option>
-                <option value="9:16">9:16 Vertical</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label>Video URL or Local MP4 Path</label>
-            <input type="text" id="inputVideoUrl" placeholder="e.g. https://www.youtube.com/embed/... or ../BRAND SHOOT/CHENNAI SILKS.MP4">
-          </div>
-
-          <div class="form-group">
-            <label>Thumbnail Image URL (Optional)</label>
-            <input type="text" id="inputThumbUrl" placeholder="Leave blank for video frame preview">
-          </div>
-
-          <div class="form-group">
-            <label>Description / Pacing Notes</label>
-            <textarea id="inputDesc" rows="3" placeholder="Describe the edit style, retention techniques, or color grade details..."></textarea>
-          </div>
-
-          <div class="form-group">
-            <label>Software Used (comma separated)</label>
-            <input type="text" id="inputTools" placeholder="Premiere Pro, After Effects, DaVinci Resolve">
-          </div>
-
-          <div class="data-modal-actions">
-            <button type="submit" class="btn-primary-neon">Add Project to Showcase</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </section>
-
   <!-- Scripts -->
-  <script src="js/background-gravitas.js?v=4"></script>
-  <script src="js/portfolioData.js?v=4"></script>
-  <script src="js/visualizer.js?v=4"></script>
-  <script src="js/app.js?v=4"></script>
+  <script src="js/background-gravitas.js?v=5"></script>
+  <script src="js/portfolioData.js?v=5"></script>
+  <script src="js/visualizer.js?v=5"></script>
+  <script src="js/app.js?v=5"></script>
 </body>
 </html>

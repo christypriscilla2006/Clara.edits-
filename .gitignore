@@ -5,3 +5,5 @@ BRAND SHOOT/*.mp4
 # Node & temp files
 node_modules/
 .DS_Store
+server.js
+

@@ -699,7 +699,7 @@
   font-size: 0.9rem;
 }
 
-.item-label { color: #64748b; width: 100px; }
+.item-label { color: #64748b; min-width: 170px; }
 .item-value { color: var(--cyan-neon); font-weight: 600; }
 
 .footer-bar {
@@ -971,4 +971,203 @@ input:focus, select:focus, textarea:focus {
   filter: drop-shadow(0 0 16px rgba(0,229,255,0.65));
   transform: scale(1.03);
 }
+
+/* ==========================================================================
+   WHY CLARA — PILLARS GRID
+   ========================================================================== */
+.why-clara-section {
+  padding: 80px 0;
+  position: relative;
+  background: rgba(7, 8, 12, 0.4);
+}
+
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.pillar-card {
+  background: var(--bg-card);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 36px 28px;
+  position: relative;
+  overflow: hidden;
+  transition: var(--transition-smooth);
+}
+
+.pillar-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--cyan-neon);
+  box-shadow: 0 12px 35px rgba(0, 242, 254, 0.15);
+  background: var(--bg-card-hover);
+}
+
+.pillar-number {
+  font-family: var(--font-heading);
+  font-size: 2.8rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, var(--cyan-neon), var(--blue-neon));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 12px;
+  line-height: 1;
+}
+
+.pillar-title {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 12px;
+  letter-spacing: 0.04em;
+}
+
+.pillar-desc {
+  font-size: 0.92rem;
+  color: #94a3b8;
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+   WORKFLOW PIPELINE TRACK
+   ========================================================================== */
+.pipeline-track {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 12px;
+  overflow-x: auto;
+  padding: 24px 8px;
+  scrollbar-width: thin;
+}
+
+.pipeline-step {
+  flex: 1;
+  min-width: 170px;
+  background: var(--bg-card);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 24px 18px;
+  transition: var(--transition-fast);
+  display: flex;
+  flex-direction: column;
+}
+
+.pipeline-step:hover {
+  border-color: var(--cyan-neon);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 242, 254, 0.15);
+}
+
+.pipeline-step.final-step {
+  border-color: rgba(0, 242, 254, 0.4);
+  background: linear-gradient(135deg, rgba(13, 16, 26, 0.9), rgba(0, 242, 254, 0.08));
+}
+
+.step-num {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--cyan-neon);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.step-title {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.step-desc {
+  font-size: 0.82rem;
+  color: #94a3b8;
+  line-height: 1.5;
+}
+
+.pipeline-connector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(0, 242, 254, 0.5);
+  font-size: 1.2rem;
+  font-weight: 800;
+  user-select: none;
+}
+
+/* ==========================================================================
+   FEATURED WORK CARD EXTENSIONS
+   ========================================================================== */
+.watch-case-btn {
+  position: absolute;
+  bottom: 20px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #000;
+  background: var(--cyan-neon);
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  box-shadow: 0 0 15px rgba(0, 242, 254, 0.6);
+  transform: translateY(10px);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .watch-case-btn {
+  transform: translateY(0);
+}
+
+.card-play-overlay {
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card-client-tag {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  background: rgba(0, 242, 254, 0.1);
+  color: var(--cyan-neon);
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.expertise-card.full-width-card {
+  grid-column: 1 / -1;
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN BREAKPOINTS
+   ========================================================================== */
+@media (max-width: 900px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    padding-top: 20px;
+  }
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  .hero-description {
+    font-size: 1.05rem;
+  }
+  .main-nav {
+    display: none;
+  }
+  .pipeline-track {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .pipeline-connector {
+    transform: rotate(90deg);
+  }
+  .contact-title {
+    font-size: 1.9rem;
+  }
+}
+
 

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CLARA Studio — Protected Admin Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Outfit:wght@400;600;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: #07080c;
+      color: #e2e8f0;
+      font-family: 'Outfit', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .admin-card {
+      max-width: 540px;
+      width: 100%;
+      background: #0d0f17;
+      border: 1px solid rgba(0, 242, 254, 0.3);
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 0 40px rgba(0, 0, 0, 0.8), inset 0 0 20px rgba(0, 242, 254, 0.05);
+      text-align: center;
+    }
+    .admin-icon {
+      font-size: 2.5rem;
+      margin-bottom: 16px;
+    }
+    .admin-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.8rem;
+      color: #fff;
+      margin-bottom: 12px;
+    }
+    .admin-sub {
+      color: #94a3b8;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 28px;
+    }
+    .auth-notice {
+      background: rgba(0, 242, 254, 0.06);
+      border: 1px dashed rgba(0, 242, 254, 0.25);
+      border-radius: 8px;
+      padding: 16px;
+      font-family: 'Fira Code', monospace;
+      font-size: 0.82rem;
+      color: #38bdf8;
+      margin-bottom: 28px;
+      text-align: left;
+    }
+    .btn-return {
+      display: inline-block;
+      background: #00f2fe;
+      color: #000;
+      font-weight: 700;
+      padding: 12px 24px;
+      border-radius: 9999px;
+      text-decoration: none;
+      transition: background 0.2s ease;
+    }
+    .btn-return:hover {
+      background: #0070f3;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="admin-card">
+    <div class="admin-icon">🔒</div>
+    <h1 class="admin-title">RESTRICTED ADMIN PORTAL</h1>
+    <p class="admin-sub">
+      Portfolio management, project mutations, and metadata updates require server-side authentication.
+    </p>
+
+    <div class="auth-notice">
+      <strong>SECURITY POLICY:</strong><br>
+      Administrative content controls are prohibited on public client routes. Connect your backend server/CMS authentication service to enable authenticated project management.
+    </div>
+
+    <a href="../index.html" class="btn-return">← Return to CLARA Studio Website</a>
+  </div>
+</body>
+</html>
