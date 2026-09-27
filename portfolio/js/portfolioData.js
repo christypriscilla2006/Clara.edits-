@@ -23,7 +23,8 @@ window.VERCEL_BLOB_VIDEOS = {
   "BTS_4": "",
   "BTS_5": "",
   "BTS_6": "",
-  "BTS_7": ""
+  "BTS_7": "",
+  "WEDDING_FILM": ""
 };
 
 function getBlobUrl(key, localFallback) {
@@ -230,14 +231,25 @@ window.PORTFOLIO_DATA = {
     },
     {
       id: "proj-bts-7",
-      title: "BTS Creative Short — Reel 7",
+      title: "Saregama Music",
       category: "Reels & Shorts",
       aspectRatio: "9:16",
       videoUrl: getBlobUrl("BTS_7", "BRAND%20SHOOT/bts_reel_7.mp4"),
       thumbnailUrl: "",
       description: "Fluid short-form edit combining kinetic captions, color grading, and audio polish.",
       tools: ["Premiere Pro", "After Effects"],
-      client: "Brand BTS"
+      client: "Saregama Music"
+    },
+    {
+      id: "proj-wedding-1",
+      title: "Wedding Film Cut",
+      category: "Commercials",
+      aspectRatio: "16:9",
+      videoUrl: getBlobUrl("WEDDING_FILM", "BRAND%20SHOOT/Wedding.MOV"),
+      thumbnailUrl: "",
+      description: "Cinematic wedding film cut featuring rich color grading, emotional story pacing, and audio mixing.",
+      tools: ["Premiere Pro", "DaVinci Resolve"],
+      client: "Wedding Film"
     },
 
     // ─── MOTION GRAPHICS ───
