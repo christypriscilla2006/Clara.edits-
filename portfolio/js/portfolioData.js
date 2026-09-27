@@ -250,45 +250,6 @@ window.PORTFOLIO_DATA = {
       description: "Cinematic wedding film cut featuring rich color grading, emotional story pacing, and audio mixing.",
       tools: ["Premiere Pro", "DaVinci Resolve"],
       client: "Wedding Film"
-    },
-
-    // ─── MOTION GRAPHICS ───
-    {
-      id: "proj-mg-1",
-      title: "Kinetic Motion & Title Suite",
-      category: "Motion Graphics",
-      aspectRatio: "16:9",
-      videoUrl: getBlobUrl("CHENNAI_SILKS_1", "BRAND%20SHOOT/chennai_silks_1.mp4"),
-      thumbnailUrl: "",
-      description: "Custom 2D/3D motion graphics package featuring kinetic text typography, logo reveals, and callouts.",
-      tools: ["After Effects", "Cinema 4D"],
-      client: "CLARA Studio"
-    },
-
-    // ─── AI-ASSISTED PRODUCTION ───
-    {
-      id: "proj-ai-1",
-      title: "AI-Assisted Visual Grade & Upscale",
-      category: "AI-Assisted",
-      aspectRatio: "16:9",
-      videoUrl: getBlobUrl("CHENNAI_SILKS_2", "BRAND%20SHOOT/chennai_silks_2.mp4"),
-      thumbnailUrl: "",
-      description: "Post-production pipeline combining Topaz Video AI upscaling, AI voice isolation, and Midjourney texture overlays.",
-      tools: ["Topaz AI", "ElevenLabs", "Premiere Pro"],
-      client: "CLARA Studio"
-    },
-
-    // ─── SUBTITLES & LOCALIZATION ───
-    {
-      id: "proj-sub-1",
-      title: "High-Retention Kinetic Subtitles",
-      category: "Subtitles",
-      aspectRatio: "9:16",
-      videoUrl: getBlobUrl("BTS_1", "BRAND%20SHOOT/bts_reel_1.mp4"),
-      thumbnailUrl: "",
-      description: "Animated word-by-word kinetic captions with color highlight cues, emoji popups, and sound effect triggers.",
-      tools: ["After Effects", "Premiere Pro"],
-      client: "CLARA Studio"
     }
   ]
 };
