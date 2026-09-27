@@ -29,6 +29,14 @@ document.addEventListener('DOMContentLoaded', () => {
            clean.includes('blob.vercel-storage.com');
   }
 
+  function getVideoType(url) {
+    if (!url) return 'video/mp4';
+    const clean = decodeURIComponent(url).toLowerCase().split('?')[0];
+    if (clean.endsWith('.mov')) return 'video/quicktime';
+    if (clean.endsWith('.webm')) return 'video/webm';
+    return 'video/mp4';
+  }
+
   // 3. Project Grid Renderer
   const gridContainer = document.getElementById('projectGrid');
 
@@ -70,9 +78,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (proj.videoUrl && proj.videoUrl.trim() !== '') {
         if (isDirectVideoUrl(proj.videoUrl)) {
+          const vType = getVideoType(proj.videoUrl);
           mediaContentHTML = `
-            <video class="card-thumb-media" muted playsinline preload="metadata">
-              <source src="${proj.videoUrl}" type="video/mp4">
+            <video class="card-thumb-media" src="${proj.videoUrl}" muted playsinline preload="metadata">
+              <source src="${proj.videoUrl}" type="${vType}">
             </video>
           `;
         } else if (proj.thumbnailUrl && proj.thumbnailUrl.trim() !== '') {
@@ -165,9 +174,10 @@ document.addEventListener('DOMContentLoaded', () => {
     modalMediaContainer.innerHTML = '';
     if (proj.videoUrl && proj.videoUrl.trim() !== '') {
       if (isDirectVideoUrl(proj.videoUrl)) {
+        const vType = getVideoType(proj.videoUrl);
         modalMediaContainer.innerHTML = `
-          <video controls autoplay playsinline preload="metadata" style="width: 100%; height: 100%;">
-            <source src="${proj.videoUrl}" type="video/mp4">
+          <video src="${proj.videoUrl}" controls autoplay playsinline preload="metadata" style="width: 100%; height: 100%;">
+            <source src="${proj.videoUrl}" type="${vType}">
             Your browser does not support HTML5 video playback.
           </video>
         `;
