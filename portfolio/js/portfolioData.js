@@ -65,8 +65,8 @@ window.PORTFOLIO_DATA = {
       videoUrl: getBlobUrl("CHENNAI_SILKS_CAMPAIGN", "BRAND%20SHOOT/chennai_silks_campaign.mp4"),
       thumbnailUrl: "",
       description: "",
-      tools: ["Premiere Pro", "DaVinci Resolve"],
-      client: "Chennai Silks"
+      tools: [],
+      client: ""
     },
     {
       id: "proj-cs-1",
@@ -76,8 +76,8 @@ window.PORTFOLIO_DATA = {
       videoUrl: getBlobUrl("CHENNAI_SILKS_1", "BRAND%20SHOOT/chennai_silks_1.mp4"),
       thumbnailUrl: "",
       description: "",
-      tools: ["Premiere Pro", "After Effects", "DaVinci Resolve"],
-      client: "Chennai Silks"
+      tools: [],
+      client: ""
     },
     {
       id: "proj-cs-2",
@@ -87,8 +87,8 @@ window.PORTFOLIO_DATA = {
       videoUrl: getBlobUrl("CHENNAI_SILKS_2", "BRAND%20SHOOT/chennai_silks_2.mp4"),
       thumbnailUrl: "",
       description: "",
-      tools: ["Premiere Pro", "After Effects"],
-      client: "Chennai Silks"
+      tools: [],
+      client: ""
     },
     {
       id: "proj-cs-4",
@@ -98,8 +98,8 @@ window.PORTFOLIO_DATA = {
       videoUrl: getBlobUrl("CHENNAI_SILKS_4", "BRAND%20SHOOT/chennai_silks_4.mp4"),
       thumbnailUrl: "",
       description: "",
-      tools: ["Premiere Pro", "Audition"],
-      client: "Chennai Silks"
+      tools: [],
+      client: ""
     },
     {
       id: "proj-cs-5",
@@ -109,8 +109,8 @@ window.PORTFOLIO_DATA = {
       videoUrl: getBlobUrl("CHENNAI_SILKS_5", "BRAND%20SHOOT/chennai_silks_5.mp4"),
       thumbnailUrl: "",
       description: "",
-      tools: ["Premiere Pro", "DaVinci Resolve"],
-      client: "Chennai Silks"
+      tools: [],
+      client: ""
     },
 
     // ─── COLOR GRADING ───
@@ -122,8 +122,8 @@ window.PORTFOLIO_DATA = {
       videoUrl: getBlobUrl("CHENNAI_SILKS_3", "BRAND%20SHOOT/chennai_silks_3.mp4"),
       thumbnailUrl: "",
       description: "",
-      tools: ["DaVinci Resolve", "Lumetri Color"],
-      client: "Chennai Silks"
+      tools: [],
+      client: ""
     },
 
     // ─── YOUTUBE EDITING ───
@@ -135,8 +135,8 @@ window.PORTFOLIO_DATA = {
       videoUrl: getBlobUrl("THINK_MUSIC_1", "BRAND%20SHOOT/think_music_1.mp4"),
       thumbnailUrl: "",
       description: "",
-      tools: ["Premiere Pro", "After Effects"],
-      client: "Think Music"
+      tools: [],
+      client: ""
     },
     {
       id: "proj-tm-2",
@@ -146,8 +146,8 @@ window.PORTFOLIO_DATA = {
       videoUrl: getBlobUrl("THINK_MUSIC_2", "BRAND%20SHOOT/think_music_2.mp4"),
       thumbnailUrl: "",
       description: "",
-      tools: ["Premiere Pro", "Audition"],
-      client: "Think Music"
+      tools: [],
+      client: ""
     },
     {
       id: "proj-tm-3",
@@ -157,8 +157,8 @@ window.PORTFOLIO_DATA = {
       videoUrl: getBlobUrl("THINK_MUSIC_3", "BRAND%20SHOOT/think_music_3.mp4"),
       thumbnailUrl: "",
       description: "",
-      tools: ["Premiere Pro", "Photoshop"],
-      client: "Think Music"
+      tools: [],
+      client: ""
     },
 
     // ─── REELS & SHORTS ───
@@ -170,8 +170,8 @@ window.PORTFOLIO_DATA = {
       videoUrl: getBlobUrl("BTS_1", "BRAND%20SHOOT/bts_reel_1.mp4"),
       thumbnailUrl: "",
       description: "",
-      tools: ["Premiere Pro", "After Effects"],
-      client: "Brand BTS"
+      tools: [],
+      client: ""
     },
     {
       id: "proj-bts-2",
@@ -181,8 +181,8 @@ window.PORTFOLIO_DATA = {
       videoUrl: getBlobUrl("BTS_2", "BRAND%20SHOOT/bts_reel_2.mp4"),
       thumbnailUrl: "",
       description: "",
-      tools: ["Premiere Pro"],
-      client: "Brand BTS"
+      tools: [],
+      client: ""
     },
     {
       id: "proj-bts-3",
@@ -192,8 +192,8 @@ window.PORTFOLIO_DATA = {
       videoUrl: getBlobUrl("BTS_3", "BRAND%20SHOOT/bts_reel_3.mp4"),
       thumbnailUrl: "",
       description: "",
-      tools: ["Premiere Pro", "After Effects"],
-      client: "Brand BTS"
+      tools: [],
+      client: ""
     },
     {
       id: "proj-bts-4",
@@ -203,8 +203,8 @@ window.PORTFOLIO_DATA = {
       videoUrl: getBlobUrl("BTS_4", "BRAND%20SHOOT/bts_reel_4.mp4"),
       thumbnailUrl: "",
       description: "",
-      tools: ["Premiere Pro"],
-      client: "Brand BTS"
+      tools: [],
+      client: ""
     },
     {
       id: "proj-bts-5",
@@ -214,8 +214,8 @@ window.PORTFOLIO_DATA = {
       videoUrl: getBlobUrl("BTS_5", "BRAND%20SHOOT/bts_reel_5.mp4"),
       thumbnailUrl: "",
       description: "",
-      tools: ["Premiere Pro", "DaVinci Resolve"],
-      client: "Brand BTS"
+      tools: [],
+      client: ""
     },
     {
       id: "proj-bts-6",
@@ -225,8 +225,8 @@ window.PORTFOLIO_DATA = {
       videoUrl: getBlobUrl("BTS_6", "BRAND%20SHOOT/bts_reel_6.mp4"),
       thumbnailUrl: "",
       description: "",
-      tools: ["Premiere Pro"],
-      client: "Brand BTS"
+      tools: [],
+      client: ""
     },
     {
       id: "proj-bts-7",
@@ -236,8 +236,8 @@ window.PORTFOLIO_DATA = {
       videoUrl: getBlobUrl("BTS_7", "BRAND%20SHOOT/bts_reel_7.mp4"),
       thumbnailUrl: "",
       description: "",
-      tools: ["Premiere Pro", "After Effects"],
-      client: "Saregama Music"
+      tools: [],
+      client: ""
     },
     {
       id: "proj-wedding-1",
@@ -247,8 +247,8 @@ window.PORTFOLIO_DATA = {
       videoUrl: getBlobUrl("WEDDING_FILM", "BRAND%20SHOOT/Wedding.MOV"),
       thumbnailUrl: "",
       description: "",
-      tools: ["Premiere Pro", "DaVinci Resolve"],
-      client: "Wedding Film"
+      tools: [],
+      client: ""
     }
   ]
 };
