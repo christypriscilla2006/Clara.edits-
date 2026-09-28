@@ -103,9 +103,6 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
       }
 
-      const toolsList = (proj.tools || []).map(t => `<span class="card-tool-tag">${t}</span>`).join('');
-      const clientLabel = proj.client ? `<span class="card-client-tag">${proj.client}</span>` : '';
-
       card.innerHTML = `
         <div class="card-thumb-frame">
           ${mediaContentHTML}
@@ -122,11 +119,6 @@ document.addEventListener('DOMContentLoaded', () => {
             <span class="card-ratio-badge">${proj.aspectRatio}</span>
           </div>
           <h4 class="card-project-title">${proj.title}</h4>
-          ${proj.description ? `<p class="card-project-desc">${proj.description}</p>` : ''}
-          <div class="card-tools-row">
-            ${clientLabel}
-            ${toolsList}
-          </div>
         </div>
       `;
 
@@ -194,16 +186,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if (modalDetailsDrawer) {
-      const toolsHTML = (proj.tools || []).map(t => `<span class="card-tool-tag">${t}</span>`).join(' ');
       modalDetailsDrawer.innerHTML = `
         <div class="modal-badge-group">
           <span class="modal-badge">${proj.category}</span>
           <span class="modal-badge outline">${proj.aspectRatio}</span>
-          ${proj.client ? `<span class="modal-badge outline">${proj.client}</span>` : ''}
         </div>
         <h3 class="modal-project-title">${proj.title}</h3>
-        ${proj.description ? `<p class="modal-project-desc">${proj.description}</p>` : ''}
-        ${toolsHTML ? `<div style="margin-top:12px;"><strong>Toolset:</strong> ${toolsHTML}</div>` : ''}
       `;
     }
 
