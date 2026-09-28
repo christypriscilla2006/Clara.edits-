@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
           ${proj.client ? `<span class="modal-badge outline">${proj.client}</span>` : ''}
         </div>
         <h3 class="modal-project-title">${proj.title}</h3>
-        <p class="modal-project-desc">${proj.description || 'Professional post-production edit crafted by CLARA studio.'}</p>
+        ${proj.description ? `<p class="modal-project-desc">${proj.description}</p>` : ''}
         ${toolsHTML ? `<div style="margin-top:12px;"><strong>Toolset:</strong> ${toolsHTML}</div>` : ''}
       `;
     }

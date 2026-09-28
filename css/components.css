@@ -219,8 +219,20 @@
 
 .expertise-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 24px;
+}
+
+@media (max-width: 1200px) {
+  .expertise-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .expertise-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .expertise-card {
@@ -1137,7 +1149,7 @@ input:focus, select:focus, textarea:focus {
 }
 
 .expertise-card.full-width-card {
-  grid-column: 1 / -1;
+  grid-column: auto;
 }
 
 /* ==========================================================================

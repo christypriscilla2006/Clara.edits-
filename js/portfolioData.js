@@ -65,7 +65,7 @@ window.PORTFOLIO_DATA = {
       aspectRatio: "9:16",
       videoUrl: getBlobUrl("CHENNAI_SILKS_CAMPAIGN", "BRAND%20SHOOT/chennai_silks_campaign.mp4"),
       thumbnailUrl: "",
-      description: "High-impact vertical commercial campaign cut engineered for mobile brand awareness and rich visual contrast.",
+      description: "",
       tools: ["Premiere Pro", "DaVinci Resolve"],
       client: "Chennai Silks"
     },
@@ -76,7 +76,7 @@ window.PORTFOLIO_DATA = {
       aspectRatio: "16:9",
       videoUrl: getBlobUrl("CHENNAI_SILKS_1", "BRAND%20SHOOT/chennai_silks_1.mp4"),
       thumbnailUrl: "",
-      description: "Full widescreen brand film focusing on elegant fabric movement, vibrant color pop, and cinematic rhythm.",
+      description: "",
       tools: ["Premiere Pro", "After Effects", "DaVinci Resolve"],
       client: "Chennai Silks"
     },
@@ -87,7 +87,7 @@ window.PORTFOLIO_DATA = {
       aspectRatio: "16:9",
       videoUrl: getBlobUrl("CHENNAI_SILKS_2", "BRAND%20SHOOT/chennai_silks_2.mp4"),
       thumbnailUrl: "",
-      description: "Fast-paced retail promotional edit with sharp visual cuts, sound design overlays, and brand lower thirds.",
+      description: "",
       tools: ["Premiere Pro", "After Effects"],
       client: "Chennai Silks"
     },
@@ -98,7 +98,7 @@ window.PORTFOLIO_DATA = {
       aspectRatio: "16:9",
       videoUrl: getBlobUrl("CHENNAI_SILKS_4", "BRAND%20SHOOT/chennai_silks_4.mp4"),
       thumbnailUrl: "",
-      description: "High-contrast silk commercial with synchronized Foley audio mixing and smooth speed ramping.",
+      description: "",
       tools: ["Premiere Pro", "Audition"],
       client: "Chennai Silks"
     },
@@ -109,7 +109,7 @@ window.PORTFOLIO_DATA = {
       aspectRatio: "16:9",
       videoUrl: getBlobUrl("CHENNAI_SILKS_5", "BRAND%20SHOOT/chennai_silks_5.mp4"),
       thumbnailUrl: "",
-      description: "Cinematic commercial showcase highlighting fabric detail, warm lighting tones, and brand positioning.",
+      description: "",
       tools: ["Premiere Pro", "DaVinci Resolve"],
       client: "Chennai Silks"
     },
@@ -122,7 +122,7 @@ window.PORTFOLIO_DATA = {
       aspectRatio: "16:9",
       videoUrl: getBlobUrl("CHENNAI_SILKS_3", "BRAND%20SHOOT/chennai_silks_3.mp4"),
       thumbnailUrl: "",
-      description: "LOG to Rec.709 color grade transform emphasizing natural skin tone preservation and rich jewel tones.",
+      description: "",
       tools: ["DaVinci Resolve", "Lumetri Color"],
       client: "Chennai Silks"
     },
@@ -135,7 +135,7 @@ window.PORTFOLIO_DATA = {
       aspectRatio: "16:9",
       videoUrl: getBlobUrl("THINK_MUSIC_1", "BRAND%20SHOOT/think_music_1.mp4"),
       thumbnailUrl: "",
-      description: "High-retention long-form edit featuring dynamic visual hooks, narrative pacing, and music track alignment.",
+      description: "",
       tools: ["Premiere Pro", "After Effects"],
       client: "Think Music"
     },
@@ -146,7 +146,7 @@ window.PORTFOLIO_DATA = {
       aspectRatio: "16:9",
       videoUrl: getBlobUrl("THINK_MUSIC_2", "BRAND%20SHOOT/think_music_2.mp4"),
       thumbnailUrl: "",
-      description: "Engaging studio session cut engineered with pattern interrupts, zoom cuts, and crisp dialogue balance.",
+      description: "",
       tools: ["Premiere Pro", "Audition"],
       client: "Think Music"
     },
@@ -157,7 +157,7 @@ window.PORTFOLIO_DATA = {
       aspectRatio: "16:9",
       videoUrl: getBlobUrl("THINK_MUSIC_3", "BRAND%20SHOOT/think_music_3.mp4"),
       thumbnailUrl: "",
-      description: "Fast-moving music feature edit with graphic popups, lower-third titles, and visual progression.",
+      description: "",
       tools: ["Premiere Pro", "Photoshop"],
       client: "Think Music"
     },
@@ -170,7 +170,7 @@ window.PORTFOLIO_DATA = {
       aspectRatio: "9:16",
       videoUrl: getBlobUrl("BTS_1", "BRAND%20SHOOT/bts_reel_1.mp4"),
       thumbnailUrl: "",
-      description: "Ultra-fast vertical 9:16 short with kinetic beat sync, whip transitions, and sound effect accents.",
+      description: "",
       tools: ["Premiere Pro", "After Effects"],
       client: "Brand BTS"
     },
@@ -181,7 +181,7 @@ window.PORTFOLIO_DATA = {
       aspectRatio: "9:16",
       videoUrl: getBlobUrl("BTS_2", "BRAND%20SHOOT/bts_reel_2.mp4"),
       thumbnailUrl: "",
-      description: "Behind-the-scenes vertical edit engineered for instant viewer hook retention within the first 3 seconds.",
+      description: "",
       tools: ["Premiere Pro"],
       client: "Brand BTS"
     },
@@ -192,7 +192,7 @@ window.PORTFOLIO_DATA = {
       aspectRatio: "9:16",
       videoUrl: getBlobUrl("BTS_3", "BRAND%20SHOOT/bts_reel_3.mp4"),
       thumbnailUrl: "",
-      description: "Rhythmic short-form cut with dynamic zoom transitions and stylized text overlays.",
+      description: "",
       tools: ["Premiere Pro", "After Effects"],
       client: "Brand BTS"
     },
@@ -203,7 +203,7 @@ window.PORTFOLIO_DATA = {
       aspectRatio: "9:16",
       videoUrl: getBlobUrl("BTS_4", "BRAND%20SHOOT/bts_reel_4.mp4"),
       thumbnailUrl: "",
-      description: "High-impact short-form edit tailored for Instagram Reels and YouTube Shorts discovery.",
+      description: "",
       tools: ["Premiere Pro"],
       client: "Brand BTS"
     },
@@ -214,7 +214,7 @@ window.PORTFOLIO_DATA = {
       aspectRatio: "9:16",
       videoUrl: getBlobUrl("BTS_5", "BRAND%20SHOOT/bts_reel_5.mp4"),
       thumbnailUrl: "",
-      description: "Cinematic vertical cut focusing on lighting mood, motion flow, and clean audio mixing.",
+      description: "",
       tools: ["Premiere Pro", "DaVinci Resolve"],
       client: "Brand BTS"
     },
@@ -225,7 +225,7 @@ window.PORTFOLIO_DATA = {
       aspectRatio: "9:16",
       videoUrl: getBlobUrl("BTS_6", "BRAND%20SHOOT/bts_reel_6.mp4"),
       thumbnailUrl: "",
-      description: "Snappy short-form edit featuring sound design layering and rapid scene cuts.",
+      description: "",
       tools: ["Premiere Pro"],
       client: "Brand BTS"
     },
@@ -236,7 +236,7 @@ window.PORTFOLIO_DATA = {
       aspectRatio: "9:16",
       videoUrl: getBlobUrl("BTS_7", "BRAND%20SHOOT/bts_reel_7.mp4"),
       thumbnailUrl: "",
-      description: "Fluid short-form edit combining kinetic captions, color grading, and audio polish.",
+      description: "",
       tools: ["Premiere Pro", "After Effects"],
       client: "Saregama Music"
     },
@@ -247,7 +247,7 @@ window.PORTFOLIO_DATA = {
       aspectRatio: "16:9",
       videoUrl: getBlobUrl("WEDDING_FILM", "BRAND%20SHOOT/Wedding.MOV"),
       thumbnailUrl: "",
-      description: "Cinematic wedding film cut featuring rich color grading, emotional story pacing, and audio mixing.",
+      description: "",
       tools: ["Premiere Pro", "DaVinci Resolve"],
       client: "Wedding Film"
     }
