@@ -230,7 +230,11 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.expertise-filter-btn').forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.stopPropagation();
-      const filterCat = btn.getAttribute('data-filter');
+      let filterCat = btn.getAttribute('data-filter');
+      const matchingPill = document.querySelector(`.pill-btn[data-cat="${filterCat}"]`);
+      if (!matchingPill) {
+        filterCat = 'All';
+      }
       currentCategory = filterCat;
 
       document.querySelectorAll('.pill-btn').forEach(p => {
