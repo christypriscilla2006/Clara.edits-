@@ -42,7 +42,6 @@ window.PORTFOLIO_DATA = {
     contact: {
       email: "clara.edit2904@gmail.com",
       businessEnquiries: "+91 73584 99043",
-      whatsapp: "+91 93635 62810"
     }
   },
 
