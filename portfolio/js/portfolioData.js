@@ -49,11 +49,7 @@ window.PORTFOLIO_DATA = {
   categories: [
     "YouTube",
     "Reels & Shorts",
-    "Commercials",
-    "Motion Graphics",
-    "AI-Assisted",
-    "Color",
-    "Subtitles"
+    "Commercials"
   ],
 
   projects: [
@@ -118,7 +114,7 @@ window.PORTFOLIO_DATA = {
     {
       id: "proj-cs-3",
       title: "Chennai Silks — Cinematic Color Grade",
-      category: "Color",
+      category: "Commercials",
       aspectRatio: "16:9",
       videoUrl: getBlobUrl("CHENNAI_SILKS_3", "BRAND%20SHOOT/chennai_silks_3.mp4"),
       thumbnailUrl: "",
