@@ -244,7 +244,7 @@ window.PORTFOLIO_DATA = {
       title: "Wedding Film Cut",
       category: "Commercials",
       aspectRatio: "16:9",
-      videoUrl: getBlobUrl("WEDDING_FILM", "BRAND%20SHOOT/Wedding.MOV"),
+      videoUrl: getBlobUrl("WEDDING_FILM", "BRAND%20SHOOT/wedding.mp4"),
       thumbnailUrl: "",
       description: "",
       tools: [],
